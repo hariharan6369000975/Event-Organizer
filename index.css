@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Reddit+Mono:wght@200..900&display=swap');
+
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font family */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('./images/indexpage.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    box-shadow: 8px 9px 9px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: rgb(158, 157, 157);
+    font-family: "Anton", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+header h1:hover{
+     /* Change color on hover */
+    transition: color 0.3s ease;
+}
+
+
+header h2{
+    font-family: "Reddit Mono", monospace;
+}
+
+header p {
+    font-size: 1.2em;
+    font-family: "Sevillana",cursive;
+    
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#wedding-services {
+    background: url('./images/Wedding.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-shadow: 5px 3px 3px black;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+#baby-shower {
+    background: url('./images/marrige.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-shadow: 5px 3px 3px black;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+#birthday-parties {
+    background: url('./images/cake.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-shadow: 5px 3px 3px black;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+#concerts-shows {
+    background: url('./images/concert1.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-shadow: 5px 3px 3px black;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+#custom-decorations {
+    background: url('./images/decorations.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-shadow: 5px 3px 3px black;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+#dance-mobs {
+    background: url('./images/dancemob.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-shadow: 5px 3px 3px black;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+#services h2, #wedding-services h2, #baby-shower h2, #birthday-parties h2, #concerts-shows h2, #custom-decorations  h2,#dance-mobs h2 {
+    font-size: 2em;
+    margin-bottom: 25px;
+    color: white;
+    text-shadow: 4px 4px 3px black; 
+    font-family: "Poetsen One", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+/* Create a two-column layout for the buttons */
+.services-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px;
+    justify-content: center;
+    padding-top: 10px;
+    align-items: center;
+    margin: 0 auto; 
+    max-width: 800px; 
+    margin-bottom: 30px;
+    
+}
+
+.services-buttons h2{
+    font-family: "Danfo", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+    "ELSH" 0;
+}
+
+.services-buttons button {
+    background-color: rgba(255, 255, 255, 0.3); /* Transparent background */
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Add transition for background color and transform */
+    width: 100%; /* Set consistent width */
+    max-width: 300px; /* Optional: max width to limit button size */
+    font-family: "Reddit Mono", monospace;
+}
+
+.services-buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.7); 
+    transform: scale(1.1); /* Scale on hover */
+    color: rgb(0, 0, 0);
+    font-family: "Reddit Mono", monospace;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* section{
+    opacity: 0;
+} */
+
+.section-visible {
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* Remove list item dots */
+section ul {
+    list-style-type: none; /* Remove list decoration */
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Jersey 15 Charted", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+section p{
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
